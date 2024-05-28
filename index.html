@@ -62,10 +62,10 @@
 
         <h1>Podcast Made Simple</h1>
 
-        <form class="form" id="podcastForm">
+        <form class="form" id="podcastForm" data-hs-form-id="your_form_id">
           <div class="input-container">
-            <input type="text" class="short-input" name="firstName" placeholder="First name" required />
-            <input type="text" class="short-input" name="lastName" placeholder="Last name" required />
+            <input type="text" class="short-input" name="firstname" placeholder="First name" required />
+            <input type="text" class="short-input" name="lastname" placeholder="Last name" required />
           </div>
 
           <input type="email" class="large-input" name="email" placeholder="Email" required />
@@ -75,7 +75,7 @@
             <input type="text" class="short-input" name="zip" placeholder="Postal code" required />
           </div>
 
-          <select id="options" name="platformPreference" class="large-input">
+          <select id="options" name="platformpreference" class="large-input" required>
             <option value="" disabled selected>Platform preference</option>
             <option value="Philo">Philo</option>
             <option value="Fubo">Fubo</option>

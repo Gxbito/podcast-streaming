@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast Streaming</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Streaming Hub</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header>
-    <nav>
+  <body>
+    <header>
+      <nav>
         <a href="https://straeaming-hub.vercel.app/">
+          HOME
           <svg
             width="20"
             height="20"
@@ -26,9 +26,9 @@
               fill="black"
             />
           </svg>
-          HOME
         </a>
         <a href="https://radio-streaming.vercel.app/">
+          RADIO
           <svg
             width="21"
             height="20"
@@ -47,9 +47,9 @@
               fill="black"
             />
           </svg>
-          RADIO
         </a>
         <a href="https://tv-streaming-flax.vercel.app/">
+          TV
           <svg
             width="21"
             height="20"
@@ -68,9 +68,9 @@
               fill="black"
             />
           </svg>
-          TV
         </a>
         <a href="https://podcast-streaming-xi.vercel.app/">
+          PODCAST
           <svg
             width="21"
             height="20"
@@ -89,77 +89,126 @@
               fill="black"
             />
           </svg>
-          PODCAST
         </a>
       </nav>
-  </header>
+    </header>
 
-  <main>
-    <div id="modal" class="modal">
+    <main>
+      <div id="modal" class="modal">
         <span> Thank you for your submission </span>
       </div>
 
-    <article class="hero-container">
+      <article class="hero-container">
+        <section class="hero">
+          <img src="./assets/Podcast.jpg" alt="" />
+        </section>
 
-      <section class="hero">
-        <img src="./assets/Podcast.jpg" alt="" />
-      </section>
+        <section class="form-container">
+          <h1>Podcast Made Simple</h1>
 
-      <section class="form-container">
+          <form class="form" id="podcastForm" data-hs-form-id="your_form_id">
+            <div class="input-container">
+              <input
+                type="text"
+                class="short-input"
+                name="firstname"
+                placeholder="First name"
+                required
+              />
+              <input
+                type="text"
+                class="short-input"
+                name="lastname"
+                placeholder="Last name"
+                required
+              />
+            </div>
 
-        <h1>Podcast Made Simple</h1>
+            <input
+              type="email"
+              class="large-input"
+              name="email"
+              placeholder="Email"
+              required
+            />
 
-        <form class="form" id="podcastForm" data-hs-form-id="your_form_id">
-          <div class="input-container">
-            <input type="text" class="short-input" name="firstname" placeholder="First name" required />
-            <input type="text" class="short-input" name="lastname" placeholder="Last name" required />
-          </div>
+            <div class="input-container">
+              <input
+                type="number"
+                class="short-input"
+                name="phone"
+                placeholder="Phone number"
+                required
+              />
+              <input
+                type="text"
+                class="short-input"
+                name="zip"
+                placeholder="Postal code"
+                required
+              />
+            </div>
 
-          <input type="email" class="large-input" name="email" placeholder="Email" required />
+            <select
+              id="options"
+              name="platformpreference"
+              class="large-input"
+              required
+            >
+              <option value="" disabled selected>Platform preference</option>
+              <option value="Philo">Philo</option>
+              <option value="Fubo">Fubo</option>
+              <option value="DirectTv">DirectTv</option>
+              <option value="Netflix">Netflix</option>
+              <option value="Amazon Prime Video">Amazon Prime Video</option>
+              <option value="Hulu">Hulu</option>
+              <option value="Disney+">Disney+</option>
+              <option value="HBO Max">HBO Max</option>
+              <option value="Apple TV+">Apple TV+</option>
+              <option value="Paramount+">Paramount+</option>
+              <option value="Peacock">Peacock</option>
+            </select>
 
-          <div class="input-container">
-            <input type="number" class="short-input" name="phone" placeholder="Phone number" required />
-            <input type="text" class="short-input" name="zip" placeholder="Postal code" required />
-          </div>
+            <p>
+              By clicking the button below, you consent for and its service
+              provider to use automated technology, including calls, texts, and
+              prerecorded messages, to contact you at the number and email
+              provided about offers. This consent is not required to make a
+              purchase. Clicking the button below constitutes your electronic
+              signature.
+            </p>
 
-          <select id="options" name="platformpreference" class="large-input" required>
-            <option value="" disabled selected>Platform preference</option>
-            <option value="Philo">Philo</option>
-            <option value="Fubo">Fubo</option>
-            <option value="DirectTv">DirectTv</option>
-            <option value="Netflix">Netflix</option>
-            <option value="Amazon Prime Video">Amazon Prime Video</option>
-            <option value="Hulu">Hulu</option>
-            <option value="Disney+">Disney+</option>
-            <option value="HBO Max">HBO Max</option>
-            <option value="Apple TV+">Apple TV+</option>
-            <option value="Paramount+">Paramount+</option>
-            <option value="Peacock">Peacock</option>
-          </select>
+            <div class="text-submit">
+              <span>We respect your <a href="#">privacy</a></span>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
 
           <p>
-            By clicking the button below, you consent for and its service provider to use automated technology,
-            including calls, texts, and prerecorded messages, to contact you at the number and email provided about
-            offers. This consent is not required to make a purchase. Clicking the button below constitutes your
-            electronic signature.
+            NETTV MAGAZINE stands out as the leading business news destination
+            providing real-time financial market coverage and engaging trading
+            content to a massive audience of millions every month across
+            multiple platforms. The portal's extensive programming includes
+            hours of daily business information in North America, as well as
+            reports from NETTV MAGAZINE newsrooms around the world, providing a
+            comprehensive and global perspective on business events
           </p>
+        </section>
+      </article>
 
-          <div class="text-submit">
-            <span>We respect your <a href="#">privacy</a></span>
-            <button type="submit">Submit</button>
-          </div>
-        </form>
-      </section>
-
-    </article>
-
-    <article class="brand-container">
+      <article class="brand-container">
         <section class="brands">
           <h2>TOP BRANDS</h2>
           <p>
-            We tested the best antennas that give you a cheap, efficient and
-            effecƏve way to watch free TV, including live news, sports, and
-            more.
+            In addition to its television activities, NETTV MAGAZINE is
+            expanding its reach through a strong digital ecosystem. NETTV
+            MAGAZINE is the preferred destination for real-time financial market
+            news and information catering to the needs of NETTV MAGAZINE's
+            investment audience. NETTV MAGAZINE Make It, another digital
+            platform focused on empowering the public to make smarter decisions
+            about earning, saving, and spending money. We tested the best
+            antennas that give you a cheap, efficient and effective way to watch
+            free TV, including live news, sports, and more.
           </p>
 
           <div class="brand">
@@ -236,15 +285,17 @@
         </section>
       </article>
 
-    <footer>
-
-      <a href="./Terms and Conditions.pdf" target="_blank">Terms&Conditions</a>
-      <a href="./PRIVACY STATEMENT _ POLICY.pdf" target="_blank">Privacy Policy</a>
-      <p>Contact us : info@tvmagazine.net</p>
-
-    </footer>
-  </main>
-  <script
+      <footer>
+        <a href="./Terms and Conditions.pdf" target="_blank"
+          >Terms&Conditions</a
+        >
+        <a href="./PRIVACY STATEMENT _ POLICY.pdf" target="_blank"
+          >Privacy Policy</a
+        >
+        <p>Contact us : info@tvmagazine.net</p>
+      </footer>
+    </main>
+    <script
       type="text/javascript"
       id="hs-script-loader"
       async
@@ -256,7 +307,6 @@
       document
         .getElementById("podcastForm")
         .addEventListener("submit", function (event) {
-
           // Lógica para agregar la clase al div modal
           const modal = document.getElementById("modal");
           modal.classList.add("modal-appear");
@@ -267,10 +317,9 @@
           }, 2000);
 
           function scrollToTop() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
         });
     </script>
-</body>
-
+  </body>
 </html>
